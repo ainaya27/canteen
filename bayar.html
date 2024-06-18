@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantin Sekolah</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--awal header-->
+<header>
+
+    <a href="./beranda.html" class="logo"><i class="fas fa-utensils"></i>Kantin Kece</a>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+    
+    <nav class="navbar">
+        <a href="./beranda.html">beranda</a>
+        <a href="./menu.html">menu</a>
+        <a href="./bayar.html">pesan</a>
+    </nav>
+</header>
+<!--akhir header-->
+
+<section class="total">
+    <div class="menunya">
+        <img src="gambar/rotbak.jpg" alt="">
+    </div>
+    <div class="barang">
+    <h3>roti bakar</h3></div>
+    <div id="harga">Rp. 5.000</div>
+    <div class="quantity-box">
+        <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+        <input class="quantity" type="number" id="quantity" value="1" min="1">
+        <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+    </div>
+</section>
+
+<!-- <section class="total-selanjutnya">
+    <div class="menunya">
+        <img src="gambar/fanta.jpg" alt="">
+    </div>
+    <div class="barang">
+    <h3>fanta</h3></div>
+    <div id="harga">Rp. 5.000</div>
+    <div class="quantity-box">
+        <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+        <input type="number" id="quantity2" value="1" min="1" oninput="updatePrice(2)">
+        <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+    </div>
+</section> -->
+
+<!--awal footer section-->
+<section class="footer">
+    <div class="follow">
+        <a href="#" class="btn"><i class="fa-brands fa-instagram"></i>  instagram</a>
+        <a href="#" class="btn"><i class="fa-brands fa-x-twitter"></i>  twitter</a>
+        <a href="#" class="btn"><i class="fa-brands fa-pinterest"></i>  pinterest</a>
+    </div>
+
+    <h1 class="credit"> created by <span> someone who naive</span></h1>
+</section>
+<!--akhir footer section-->
+<script src="script.js"></script>
+
+</body>
+</html>
